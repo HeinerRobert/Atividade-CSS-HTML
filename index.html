@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .palestrante {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .palestrante img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        @media (max-width: 600px) {
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechFuture Summit</h1>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p><strong>Data:</strong> 20 de Setembro de 2025</p>
+        <p><strong>Local:</strong> Centro de Convenções TechConnect</p>
+        <p>O TechFuture Summit reúne desenvolvedores e designers para discutir as tendências mais inovadoras em tecnologia e design.</p>
+    </section>
+    
+    <section id="palestrantes">
+        <h2>Palestrantes</h2>
+        <div class="palestrante">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3nz8zX1g3phNGrwzPJZNpzJdKMeUpHid7g&s" alt="Foto do palestrante">
+            <p><strong>Mark Armstrong</strong> - Especialista em UX Design</p>
+        </div>
+        <div class="palestrante">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Bill_Gates_-_2023_-_P062021-670188_%28cropped%29.jpg" alt="Foto do palestrante">
+            <p><strong>Bill Carvalho</strong> - Engenheiro de Software</p>
+        </div>
+    </section>
+    
+    <section id="inscricao">
+        <h2>Inscreva-se</h2>
+        <form action="avaliacao.html" method="GET">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <fieldset>
+                <legend>Escolha o tipo de ingresso:</legend>
+                <input type="radio" id="presencial" name="ingresso" value="presencial" required>
+                <label for="presencial">Presencial</label>
+                <input type="radio" id="online" name="ingresso" value="online" required>
+                <label for="online">Online</label>
+            </fieldset>
+            
+            <label>
+                <input type="checkbox" name="termos" required>
+                Aceito os termos e condições
+            </label>
+            
+            <button type="submit">Enviar</button>
+        </form>>
+    </section>
+</body>
+</html>
